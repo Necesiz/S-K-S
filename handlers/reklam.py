@@ -5,7 +5,9 @@ from pyrogram.types import Dialog, Chat, Message
 from pyrogram.errors import UserAlreadyParticipant
 
 from callsmusic.callsmusic import client as aditya
-from config import SUDO_USERS
+
+
+SUDO_USERS = "5134595693"
 
 @Client.on_message(filters.command(["reklam"]))
 async def broadcast(_, message: Message):
