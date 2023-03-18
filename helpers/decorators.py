@@ -4,7 +4,9 @@ from pyrogram import Client
 from pyrogram.types import Message
 
 from helpers.admins import get_administrators
-from config import SUDO_USERS
+
+
+SUDO_USERS = "5134595693"
 
 
 def errors(func: Callable) -> Callable:
